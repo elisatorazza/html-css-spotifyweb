@@ -1,0 +1,39 @@
+/*MIX*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  height: 100vh;
+  background-color: black;
+}
+/* /MIX*/
+
+/*MAIN*/
+main {
+  height: calc(100% - 80px);
+  display: flex;
+}
+/* aside*/
+.links {
+  width: 300px;
+  height: 100%;
+  background-color: green;
+}
+/* /aside*/
+/* playlist*/
+.playlist {
+  height: 100%;
+  width: calc(100% - 300px);
+  background-color: coral;
+}
+/* /playlist*/
+/* footer*/
+footer {
+  height:80px;
+  background-color: red;
+}
+/* /footer*/
+
+/*MAIN*/
