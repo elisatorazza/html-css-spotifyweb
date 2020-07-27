@@ -20,6 +20,17 @@ main {
   width: 300px;
   height: 100%;
   background-color: green;
+  position: relative;
+}
+.logo {
+  width: 100%;
+  display: block;
+}
+.menu_bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 /* /aside*/
 /* playlist*/
@@ -27,12 +38,36 @@ main {
   height: 100%;
   width: calc(100% - 300px);
   background-color: coral;
+  position: relative;
+  overflow: auto;
+
+}
+.upgrade {
+  height: 70px;
+  width: calc(100% - 300px);
+  background-color: rgba(0,0,0,0.5);
+  text-transform: uppercase;
+  text-align: right;
+  line-height: 70px;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+.menu_playlist {
+  margin-top: 80px;
+}
+.menu_style {
+  list-style: none;
+  display: flex;
+  justify-content: center;
 }
 /* /playlist*/
 /* footer*/
 footer {
   height:80px;
   background-color: red;
+  display: flex;
+  justify-content: space-between;
 }
 /* /footer*/
 
