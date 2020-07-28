@@ -18,12 +18,14 @@
       <!-- lateral header -->
       <main>
         <aside class="links">
-          <img class="logo m_top_20 m_bottom_20" src="img/Spotify_Logo_RGB_White.png" alt="Logo Spotify">
-          <img class="icon m_top_20 m_bottom_20" src="img/Spotify_Icon_CMYK_White.png" alt="Icona Spotify">
+          <div class="logos ">
+            <img class="logo m_top_20 m_bottom_20" src="img/Spotify_Logo_RGB_White.png" alt="Logo Spotify">
+            <img class="icon m_top_20 m_bottom_20" src="img/Spotify_Icon_CMYK_White.png" alt="Icona Spotify">
+          </div>
           <nav class="icons">
             <ul class="list-none">
               <li>
-                <i class="fas fa-home white"></i> <span class="d-xs-none white">Home</span>
+                <i class="fas fa-home lg_grey"></i> <span class="d-xs-none white">Home</span>
               </li>
               <li>
                 <i class="fas fa-search"></i><span class="d-xs-none"> Cerca</span>
@@ -33,24 +35,30 @@
               </li>
             </ul>
           </nav>
-          <h4 class="txt_upper white">Playlist</h4>
-          <div class="create">
+          <div class="playlist_list d-xs-none">
+            <h4 class="txt_upper white">Playlist</h4>
+            <div class="create">
             <span>Crea playlist</span>
-          </div>
-          <ul class="personal_playlist list-none">
-            <li>Nome playlist</li>
-            <li>Nome playlist</li>
-            <li>Nome playlist</li>
-            <li>Nome playlist</li>
-            <li>Nome playlist</li>
-            <li>Nome playlist</li>
-            <li>Nome playlist</li>
-          </ul>
-          <nav class="menu_bottom">
-            <div class="install">
-              <span>Installa app</span>
             </div>
-            <h4>John Doe</h4>
+            <ul class="personal_playlist list-none">
+              <li>Nome playlist</li>
+              <li>Nome playlist</li>
+              <li>Nome playlist</li>
+              <li>Nome playlist</li>
+              <li>Nome playlist</li>
+              <li>Nome playlist</li>
+              <li>Nome playlist</li>
+            </ul>
+          </div>
+          <nav class="menu_bottom">
+            <ul class="list-none">
+              <li class="install">
+                <img class="download" src="img/download_icon.svg" alt="Logo download"> <span class="d-xs-none">Installa app</span>
+              </li>
+              <li class="profile">
+                <i class="fas fa-user-circle"></i><span class="d-xs-none white"> John Doe</span>
+              </li>
+            </ul>
           </nav>
         </aside>
         <!-- lateral /header -->

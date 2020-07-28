@@ -24,7 +24,16 @@ list-style: none;
   text-transform: uppercase;
 }
 .white {
-  color: white;
+  color: #fff;
+}
+.width_100 {
+  width: 100%;
+}
+.color_grey {
+  color: #6F6F6F;
+}
+.lg_grey {
+  color: #D2D2D2;
 }
 /* /MIX*/
 
@@ -34,7 +43,10 @@ main {
   display: flex;
 }
 /* aside*/
+
 .links {
+  display: flex;
+  flex-direction: column;
   width: 300px;
   height: 100%;
   background-color: #000;
@@ -50,43 +62,45 @@ main {
 .icon {
   display: none;
 }
+.playlist_list{
+  height: 100%;
+  overflow:hidden;
+}
+.create {
+  height: 50px;
+}
 .create::before {
   font-family: "Font Awesome 5 Free";
   content:"\f0fe";
   font-size: 30px;
   display: inline-block;
   vertical-align: middle;
-  color: #fff;
+  color: #D2D2D2;
   margin-right: 15px;
 }
+.playlist_list {
+  height: 100%;
+}
+.playlist_list h4 {
+  height: 30px;
+}
 .personal_playlist {
-  height: 150px;
-  overflow: scroll;
+  height: calc(100% - 160px);
+  overflow-y: auto;
 }
 
-.menu_bottom {
-  position: absolute;
-  bottom: 0;
-  left: 30px;
-  width: 100%;
-}
-.install::before {
-  font-family: "Font Awesome 5 Free";
-  content:"\f0ab";
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 16px;
-}
 @media screen and (max-width:576px) {
   .links {
     width: 50px;
+    padding: 0;
+    text-align: center;
   }
   .logo {
     display: none;
   }
   .icon {
     display: inline-block;
-    width: 30px;
+    width: 20px;
     text-align: center;
   }
   .d-xs-none {
@@ -96,7 +110,7 @@ main {
     width: 100%;
   }
 }
-/* /aside*/
+
 /* playlist*/
 .playlist {
   height: 100%;
@@ -129,6 +143,42 @@ main {
   }
 }
 /* /playlist*/
+/* menu_bottom*/
+.menu_bottom {
+  position: absolute;
+  bottom: 0;
+
+}
+.install {
+  padding-bottom: 10px;
+}
+.download {
+  width: 15%;
+}
+.profile {
+  border-top: 1px solid #6F6F6F;
+  padding-top: 10px;
+}
+.fa-user-circle {
+  font-size: 2rem;
+}
+.profile span {
+  font-size: 25px;
+}
+@media screen and (max-width:576px) {
+  .profile {
+    border: none;
+  }
+  .install img {
+    width: 60%;
+  }
+ .prfile i {
+    width: 100%;
+  }
+
+}
+/* /menu_bottom*/
+/* /aside*/
 /* footer*/
 footer {
   height:80px;
