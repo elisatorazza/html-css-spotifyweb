@@ -44,7 +44,7 @@ main {
 }
 /* aside*/
 
-.links {
+aside {
   display: flex;
   flex-direction: column;
   width: 300px;
@@ -54,6 +54,9 @@ main {
   position: relative;
   padding: 0 30px;
   line-height: 35px;
+}
+.height_30 {
+  height: 30%;
 }
 .logo {
   width: 100px;
@@ -67,9 +70,9 @@ main {
   overflow:hidden;
 }
 .create {
-  height: 50px;
+  height: 70px;
 }
-.create::before {
+.create span::before {
   font-family: "Font Awesome 5 Free";
   content:"\f0fe";
   font-size: 30px;
@@ -80,14 +83,48 @@ main {
 }
 .playlist_list {
   height: 100%;
-}
-.playlist_list h4 {
-  height: 30px;
+  overflow: hidden;
 }
 .personal_playlist {
-  height: calc(100% - 160px);
+  height: calc(100% - 70px);
   overflow-y: auto;
 }
+/* menu_bottom*/
+/* .menu_bottom {
+  position: absolute;
+  bottom: 0;
+} */
+.install {
+  padding-bottom: 10px;
+}
+.download {
+  width: 15%;
+}
+.profile {
+  border-top: 1px solid #6F6F6F;
+  padding-top: 10px;
+}
+.fa-user-circle {
+  font-size: 2rem;
+}
+.profile span {
+  font-size: 25px;
+}
+@media screen and (max-width:576px) {
+  .profile {
+    border: none;
+  }
+  .install img {
+    width: 25%;
+  }
+ .prfile i {
+    width: 100%;
+  }
+  .menu_bottom {
+    position: absolute;
+    bottom: 0;
+}
+/* /menu_bottom*/
 
 @media screen and (max-width:576px) {
   .links {
@@ -110,7 +147,7 @@ main {
     width: 100%;
   }
 }
-
+/* /aside*/
 /* playlist*/
 .playlist {
   height: 100%;
@@ -143,42 +180,7 @@ main {
   }
 }
 /* /playlist*/
-/* menu_bottom*/
-.menu_bottom {
-  position: absolute;
-  bottom: 0;
 
-}
-.install {
-  padding-bottom: 10px;
-}
-.download {
-  width: 15%;
-}
-.profile {
-  border-top: 1px solid #6F6F6F;
-  padding-top: 10px;
-}
-.fa-user-circle {
-  font-size: 2rem;
-}
-.profile span {
-  font-size: 25px;
-}
-@media screen and (max-width:576px) {
-  .profile {
-    border: none;
-  }
-  .install img {
-    width: 60%;
-  }
- .prfile i {
-    width: 100%;
-  }
-
-}
-/* /menu_bottom*/
-/* /aside*/
 /* footer*/
 footer {
   height:80px;
