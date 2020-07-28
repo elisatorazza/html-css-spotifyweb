@@ -4,8 +4,18 @@
   margin: 0;
   padding: 0;
 }
+a {
+  text-decoration: none;
+  color: #6F6F6F;
+}
 body {
   font-family: 'Montserrat', sans-serif;
+}
+.font_8 {
+  font-size: 9px;
+}
+.font_11 {
+  font-size: 11px;
 }
 .wrapper {
   height: 100vh;
@@ -55,9 +65,6 @@ aside {
   padding: 0 30px;
   line-height: 35px;
 }
-.height_30 {
-  height: 30%;
-}
 .logo {
   width: 100px;
   display: block;
@@ -89,11 +96,28 @@ aside {
   height: calc(100% - 70px);
   overflow-y: auto;
 }
+@media screen and (max-width:576px) {
+  .links {
+    width: 50px;
+    padding: 0;
+    text-align: center;
+  }
+  .logo {
+    display: none;
+  }
+  .icon {
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+  }
+  .d-xs-none {
+    display: none;
+  }
+  .icons i {
+    width: 100%;
+  }
+}
 /* menu_bottom*/
-/* .menu_bottom {
-  position: absolute;
-  bottom: 0;
-} */
 .install {
   padding-bottom: 10px;
 }
@@ -117,45 +141,23 @@ aside {
   .install img {
     width: 20%;
   }
- .prfile i {
+ .profile i {
     width: 100%;
   }
   .menu_bottom {
     position: absolute;
     bottom: 0;
+  }
 }
 /* /menu_bottom*/
-
-@media screen and (max-width:576px) {
-  .links {
-    width: 50px;
-    padding: 0;
-    text-align: center;
-  }
-  .logo {
-    display: none;
-  }
-  .icon {
-    display: inline-block;
-    width: 20px;
-    text-align: center;
-  }
-  .d-xs-none {
-    display: none;
-  }
-  .icons i {
-    width: 100%;
-  }
-}
 /* /aside*/
 /* playlist*/
 .playlist {
   height: 100%;
   width: calc(100% - 300px);
-  background-color: coral;
+  background-color: #141922;
   position: relative;
   overflow: auto;
-
 }
 .upgrade {
   height: 70px;
@@ -167,6 +169,13 @@ aside {
   top: 0;
   right: 0;
 }
+.btn_upgrade {
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding: 8px 25px;
+  margin-right: 5px;
+  font-size: 14px;
+}
 .menu_playlist {
   margin-top: 80px;
 }
@@ -174,6 +183,20 @@ aside {
   display: flex;
   justify-content: center;
 }
+.menu_style li {
+  padding: 0 10px;
+}
+.menu_style li:first-child::after {
+  content:"";
+  width: 20px;
+  height: 2px;
+  color: #ADFF2F;
+  display: block;
+}
+.small_wrapper {
+  padding: 20px;
+}
+
 @media screen and (max-width:576px) {
   .playlist {
     width: calc(100% - 50px);
