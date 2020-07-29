@@ -92,6 +92,7 @@ aside {
   display: block;
 }
 .icon {
+  width: 30px;
   display: none;
 }
 .playlist_list{
@@ -139,7 +140,7 @@ aside {
     display: none;
   }
   .icons i {
-    width: 100%;
+    width: 30px;
   }
 }
 /* menu_bottom*/
@@ -160,6 +161,10 @@ aside {
   font-size: 25px;
 }
 @media screen and (max-width:552px) {
+  aside {
+    padding: 0;
+    text-align: center;
+  }
   .profile {
     border: none;
   }
@@ -167,7 +172,6 @@ aside {
     width: 100%;
     text-align: left;
   }
-
   .menu_bottom {
     position: absolute;
     bottom: 0;
