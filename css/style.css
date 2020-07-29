@@ -15,6 +15,13 @@ body {
 span {
   font-family: 'Montserrat', sans-serif;
 }
+.d_flex {
+  display:flex;
+}
+.d_flex_a_cent {
+  display: flex;
+  align-items: center;
+}
 .font_20 {
   font-size: 20px;
 }
@@ -26,7 +33,7 @@ span {
   background-color: black;
 }
 .list-none {
-list-style: none;
+  list-style: none;
 }
 .m_top_20 {
   margin-top: 20px;
@@ -52,6 +59,9 @@ list-style: none;
 .lg_grey {
   color: #D2D2D2;
 }
+.relative {
+  position: relative;
+}
 .width_40 {
   width:40%;
 }
@@ -69,7 +79,6 @@ list-style: none;
 /*MAIN*/
 main {
   height: calc(100% - 80px);
-  display: flex;
 }
 /* aside*/
 main a:hover {
@@ -77,7 +86,6 @@ main a:hover {
   text-decoration: none;
 }
 aside {
-  display: flex;
   flex-direction: column;
   width: 300px;
   height: 100%;
@@ -111,10 +119,6 @@ aside {
   color: #D2D2D2;
   margin-right: 15px;
 }
-.playlist_list {
-  height: 100%;
-  overflow: hidden;
-}
 .personal_playlist {
   height: calc(100% - 70px);
   overflow-y: auto;
@@ -122,6 +126,8 @@ aside {
 @media screen and (max-width:552px) {
   aside {
     width: 50px;
+    padding: 0;
+    text-align: center;
   }
   .links {
     width: 50px;
@@ -161,10 +167,6 @@ aside {
   font-size: 25px;
 }
 @media screen and (max-width:552px) {
-  aside {
-    padding: 0;
-    text-align: center;
-  }
   .profile {
     border: none;
   }
@@ -178,7 +180,6 @@ aside {
     left: 50%;
     transform: translateX(-50%);
   }
-
 }
 /* /menu_bottom*/
 /* /aside*/
@@ -222,7 +223,6 @@ aside {
   margin:auto;
 }
 .menu_style {
-  display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -254,9 +254,6 @@ aside {
 .small_wrapper p {
   font-size: 12px;
   color: #D2D2D2;
-}
-.image {
-  position:relative;
 }
 .overlay {
   background-color: rgba(0,0,0,0.5);
@@ -299,20 +296,17 @@ aside {
   }
 }
 /* /playlist*/
-
-/* footer*/
+/* /MAIN*/
+/* FOOTER*/
 footer {
   height: 80px;
   background-color: #282828;
 }
 footer .small_wrapper {
-  display: flex;
   justify-content: space-between;
 }
 .artist {
   width: 25%;
-  display: flex;
-  align-items: center;
   padding: 10px;
 }
 .artist img {
@@ -344,23 +338,19 @@ footer .small_wrapper {
   width: 50%;
 }
 .play {
-  display: flex;
   justify-content: center;
-  align-items: center;
 }
 .play i {
   padding: 5px 20px;
 }
-.fa-play-circle {
+footer .fa-play-circle {
   font-size: 30px;
 }
-.fa-play-circle:hover {
+footer .fa-play-circle:hover {
   font-size: 40px;
 }
 .bar {
-  display:flex;
   justify-content: space-around;
-  align-items: center;
 }
 .bar p {
   margin: 0;
@@ -397,8 +387,6 @@ footer .small_wrapper {
 }
 .settings {
   width: 25%;
-  display:flex;
-  align-items: center;
   justify-content: flex-end;
 }
 .settings > * {
@@ -426,6 +414,4 @@ footer .small_wrapper {
     color: #fff;
   }
 }
-/* /footer*/
-
-/*MAIN*/
+/* /FOOTER*/
