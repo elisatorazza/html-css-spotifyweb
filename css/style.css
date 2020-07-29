@@ -12,8 +12,11 @@ a {
 body {
   font-family: 'Montserrat', sans-serif;
 }
-.font_25 {
-  font-size: 25px;
+span {
+  font-family: 'Montserrat', sans-serif;
+}
+.font_20 {
+  font-size: 20px;
 }
 .font_700 {
   font-weight: 700;
@@ -292,6 +295,9 @@ footer .small_wrapper {
 .title p {
   margin-bottom: 0;
 }
+.preference a:hover i{
+  color: #fff;
+}
 .fa-heart {
   padding-right: 3px;
 }
@@ -310,6 +316,9 @@ footer .small_wrapper {
   padding: 5px 20px;
 }
 .fa-play-circle {
+  font-size: 30px;
+}
+.fa-play-circle:hover {
   font-size: 40px;
 }
 .bar {
@@ -335,6 +344,19 @@ footer .small_wrapper {
   height:4px;
   background-color: #D2D2D2;
   border-radius: 5px;
+}
+.overlay_green {
+  background-color: #ADFF2F;
+  display: none;
+}
+.bar_tab:hover .overlay_green{
+  display:block;
+}
+.overlay_green:after {
+  content:"";
+  border: 1px solid #fff;
+  border-radius: 1px;
+  display:inline-block;
 }
 .settings > * {
   margin: 0 8px;
