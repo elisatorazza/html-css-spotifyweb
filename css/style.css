@@ -11,6 +11,9 @@ a {
 body {
   font-family: 'Montserrat', sans-serif;
 }
+.font_25 {
+  font-size: 25px;
+}
 .font_700 {
   font-weight: 700;
 }
@@ -212,16 +215,16 @@ aside {
 
 /* footer*/
 footer {
-  height:80px;
+  height: 80px;
   background-color: #282828;
 }
-footer .smaller_wrapper {
+footer .small_wrapper {
   display: flex;
   justify-content: space-between;
 }
 .artist {
   width: 25%;
-  display:flex;
+  display: flex;
   align-items: center;
   padding: 10px;
 }
@@ -244,6 +247,39 @@ footer .smaller_wrapper {
 }
 .fa-folder {
   padding-left: 3px;
+}
+.player {
+  width: 50%;
+}
+.play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.play i {
+  padding: 5px 20px;
+}
+.fa-play-circle {
+  font-size: 40px;
+}
+.bar {
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.bar p {
+  margin: 0;
+}
+.settings {
+  width: 25%;
+  background-color:red;
+  height: 80px;
+}
+.bar_tab {
+  width: 80%;
+  height:4px;
+  background-color: #6F6F6F;
+  border-radius: 5px;
 }
 @media screen and (max-width:768px) {
 
