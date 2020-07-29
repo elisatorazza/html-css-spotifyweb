@@ -348,15 +348,22 @@ footer .small_wrapper {
 .overlay_green {
   background-color: #ADFF2F;
   display: none;
-}
-.bar_tab:hover .overlay_green{
-  display:block;
+  position:relative;
 }
 .overlay_green:after {
   content:"";
-  border: 1px solid #fff;
-  border-radius: 1px;
-  display:inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  display: inline-block;
+}
+.bar_tab:hover .overlay_green{
+  display:block;
 }
 .settings > * {
   margin: 0 8px;
