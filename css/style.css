@@ -37,7 +37,6 @@ list-style: none;
 .padding_20 {
   padding: 20px;
 }
-
 .txt_upper {
   text-transform: uppercase;
 }
@@ -322,9 +321,11 @@ footer .small_wrapper {
 }
 .title h4 {
   margin-bottom: 0;
+  font-size: 12px;
 }
 .title p {
   margin-bottom: 0;
+  font-size: 10px;
 }
 .preference a:hover i{
   color: #fff;
@@ -360,12 +361,6 @@ footer .small_wrapper {
 .bar p {
   margin: 0;
 }
-.settings {
-  width: 25%;
-  display:flex;
-  align-items: center;
-  justify-content: flex-end;
-}
 .bar_tab {
   height:4px;
   background-color: #6F6F6F;
@@ -396,8 +391,36 @@ footer .small_wrapper {
 .bar_tab:hover .overlay_green{
   display:block;
 }
+.settings {
+  width: 25%;
+  display:flex;
+  align-items: center;
+  justify-content: flex-end;
+}
 .settings > * {
   margin: 0 8px;
+}
+@media screen and (max-width:638px) {
+  .player, .artist, .settings {
+    width: calc(100% / 3);
+    padding-top: 10px;
+  }
+  .play i {
+    padding: 5px 10px;
+    font-size: 15px;
+  }
+  .fa-play-circle {
+    font-size: 20px;
+  }
+  .fa-play-circle:hover {
+    font-size: 30px;
+  }
+  .bar_tab {
+    width: 60%;
+  }
+  .time p {
+    color: #fff;
+  }
 }
 /* /footer*/
 
