@@ -12,6 +12,11 @@ a {
 body {
   font-family: 'Montserrat', sans-serif;
 }
+.clear_float::after {
+  content:"";
+  display: block;
+  clear:both;
+}
 span {
   font-family: 'Montserrat', sans-serif;
 }
@@ -118,7 +123,7 @@ aside {
   height: calc(100% - 70px);
   overflow-y: auto;
 }
-@media screen and (max-width:576px) {
+@media screen and (max-width:552px) {
   .links {
     width: 50px;
     padding: 0;
@@ -156,7 +161,7 @@ aside {
 .profile span {
   font-size: 25px;
 }
-@media screen and (max-width:576px) {
+@media screen and (max-width:552px) {
   .profile {
     border: none;
   }
@@ -228,7 +233,15 @@ aside {
   display: block;
   margin:auto;
 }
-
+.picture {
+  float:left;
+  width: calc(100% / 6);
+  max-height: 100%;
+  padding: 0 10px;
+}
+.picture img {
+  width: 100%;
+}
 .small_wrapper h4 {
   font-size: 14px;
   line-height: 15px;
@@ -259,9 +272,19 @@ aside {
 .image:hover .overlay{
   display: block;
 }
-@media screen and (max-width:576px) {
+@media screen and (max-width:552px) {
   .playlist {
     width: calc(100% - 50px);
+  }
+}
+@media screen and (min-width:640px) and (max-width:878px) {
+  .picture {
+    width: 25%;
+  }
+}
+@media screen and (max-width:552px) {
+  .picture {
+    width: 50%;
   }
 }
 /* /playlist*/
