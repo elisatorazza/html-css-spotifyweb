@@ -25,13 +25,14 @@
             <nav class="icons">
               <ul class="list-none">
                 <li>
-                  <i class="fas fa-home lg_grey"></i> <span class="d-xs-none white">Home</span>
+                  <i class="fas fa-home lg_grey"><a href="#">
+                  <span class="d-xs-none white">Home</span></a></i>
                 </li>
                 <li>
-                  <i class="fas fa-search"></i><span class="d-xs-none"> Cerca</span>
+                  <i class="fas fa-search"><a href="#"> <span class="d-xs-none"> Cerca</span></a></i>
                 </li>
                 <li>
-                  <i class="fas fa-swatchbook"></i> <span class="d-xs-none">La tua libreria</span>
+                  <i class="fas fa-swatchbook"><a href="#"> <span class="d-xs-none">La tua libreria</span></a></i>
                 </li>
               </ul>
             </nav>
@@ -41,19 +42,21 @@
               <span>Crea playlist</span>
             </div>
             <ul class="personal_playlist list-none">
-              <li>Nome playlist</li>
-              <li>Nome playlist</li>
-              <li>Nome playlist</li>
-              <li>Nome playlist</li>
-              <li>Nome playlist</li>
-              <li>Nome playlist</li>
-              <li>Nome playlist</li>
+              <li><a href="#">Nome playlist</a></li>
+              <li><a href="#">Nome playlist</a></li>
+              <li><a href="#">Nome playlist</a></li>
+              <li><a href="#">Nome playlist</a></li>
+              <li><a href="#">Nome playlist</a></li>
+              <li><a href="#">Nome playlist</a></li>
+              <li><a href="#">Nome playlist</a></li>
             </ul>
           </nav>
           <nav class="menu_bottom">
             <ul class="list-none">
               <li class="install">
+                <a href="#">
                 <img class="download" src="img/download_icon.svg" alt="Logo download"> <span class="d-xs-none">Installa app</span>
+                </a>
               </li>
               <li class="profile">
                 <i class="fas fa-user-circle"></i><span class="d-xs-none white"> John Doe</span>
@@ -83,32 +86,62 @@
               <h2 class="font_700">Recently played</h2>
               <div class="row m_bottom_20">
                 <div class="text-center col-sm-6 col-md-3 col-lg-2 text-center">
-                  <img class="img-fluid" src="img/immagini_box/metal_lifting.jpg" alt="Logo Metal">
+                  <div class="image">
+                    <img class="img-fluid" src="img/immagini_box/metal_lifting.jpg" alt="Logo Metal">
+                    <div class="overlay">
+                      <i class="far fa-play-circle"></i>
+                    </div>
+                  </div>
                   <h4 class="m_top_20">Heavy Metal</h4>
                   <p>Subtitle</p>
                 </div>
                 <div class="text-center col-sm-6 col-md-3 col-lg-2 text-center">
-                  <img class="img-fluid" src="img/immagini_box/stranger.jpeg" alt="Logo Stranger things">
+                  <div class="image">
+                    <img class="img-fluid" src="img/immagini_box/stranger.jpeg" alt="Logo Stranger things">
+                    <div class="overlay">
+                      <i class="far fa-play-circle"></i>
+                    </div>
+                  </div>
                   <h4 class="m_top_20">Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h4>
                   <p>Kyle Dixon and Micheal Stein</p>
                 </div>
                 <div class="text-center col-sm-6 col-md-3 col-lg-2 text-center">
-                  <img class="img-fluid" src="img/immagini_box/aquietplace.jpeg" alt="Logo A quiet place">
+                  <div class="image">
+                    <img class="img-fluid" src="img/immagini_box/aquietplace.jpeg" alt="Logo A quiet place">
+                    <div class="overlay">
+                      <i class="far fa-play-circle"></i>
+                    </div>
+                  </div>
                   <h4 class="m_top_20">A quiet place</h4>
                   <p>Subtitle</p>
                 </div>
                 <div class="text-center col-sm-6 col-md-3 col-lg-2 text-center">
-                  <img class="img-fluid" src="img/immagini_box/split.jpeg" alt="Logo Split">
+                  <div class="image">
+                    <img class="img-fluid" src="img/immagini_box/split.jpeg" alt="Logo Split">
+                    <div class="overlay">
+                      <i class="far fa-play-circle"></i>
+                    </div>
+                  </div>
                   <h4 class="m_top_20">Splitl</h4>
                   <p>Subtitle</p>
                 </div>
                 <div class="text-center col-sm-6 col-md-3 col-lg-2 text-center">
-                  <img class="img-fluid" src="img/immagini_box/cure.jpeg" alt="Logo Cure">
+                  <div class="image">
+                    <img class="img-fluid" src="img/immagini_box/cure.jpeg" alt="Logo Cure">
+                    <div class="overlay">
+                      <i class="far fa-play-circle"></i>
+                    </div>
+                  </div>
                   <h4 class="m_top_20">A cure for wellness</h4>
                   <p>Subtitle</p>
                 </div>
                 <div class="text-center col-sm-6 col-md-3 col-lg-2 text-center">
-                  <img class="img-fluid" src="img/immagini_box/sinister.jpeg" alt="Logo Sinister">
+                  <div class="image">
+                    <img class="img-fluid" src="img/immagini_box/sinister.jpeg" alt="Logo Sinister">
+                    <div class="overlay">
+                      <i class="far fa-play-circle"></i>
+                    </div>
+                  </div>
                   <h4 class="m_top_20">Sinister</h4>
                   <p>Subtitle</p>
                 </div>
@@ -121,11 +154,21 @@
               <p>Più ascolti, più accurati saranno i suggerimenti.</p>
               <div class="row m_bottom_20">
                 <div class="text-center col-sm-6 col-md-3 col-lg-2 text-center">
-                  <img class="img-fluid" src="img/immagini_box/radar.jpeg" alt="Logo Release Radar">
+                  <div class="image">
+                    <img class="img-fluid" src="img/immagini_box/radar.jpeg" alt="Logo Release Radar">
+                    <div class="overlay">
+                      <i class="far fa-play-circle"></i>
+                    </div>
+                  </div>
                   <h4 class="m_top_20">Release Radar</h4>
                 </div>
                 <div class="text-center col-sm-6 col-md-3 col-lg-2 text-center">
-                  <img class="img-fluid" src="img/immagini_box/mixdaily.jpeg" alt="Logo Daily Mix">
+                  <div class="image">
+                    <img class="img-fluid" src="img/immagini_box/mixdaily.jpeg" alt="Logo Daily Mix">
+                    <div class="overlay">
+                      <i class="far fa-play-circle"></i>
+                    </div>
+                  </div>
                   <h4 class="m_top_20">Daily mix</h4>
                 </div>
               </div>
@@ -136,11 +179,21 @@
               <p>Più ascolti, più accurati saranno i suggerimenti.</p>
               <div class="row m_bottom_20">
                 <div class="text-center col-sm-6 col-md-3 col-lg-2 text-center">
-                  <img class="img-fluid" src="img/immagini_box/young.jpeg" alt="Logo Young and Beautiful">
+                  <div class="image">
+                    <img class="img-fluid" src="img/immagini_box/young.jpeg" alt="Logo Young and Beautiful">
+                    <div class="overlay">
+                      <i class="far fa-play-circle"></i>
+                    </div>
+                  </div>
                   <h4 class="m_top_20">Lana Del Rey</h4>
                 </div>
                 <div class="text-center col-sm-6 col-md-3 col-lg-2 text-center">
+                  <div class="image">
                   <img class="img-fluid" src="img/immagini_box/einaudi.jpeg" alt="Logo Ludovico Einaudi">
+                  <div class="overlay">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
                   <h4 class="m_top_20">Ludovico Einaudi</h4>
                 </div>
               </div>
@@ -192,7 +245,7 @@
             <i class="fas fa-tasks"></i>
             <i class="fas fa-desktop"></i>
             <i class="fas fa-volume-up"></i>
-            <div class="bar_tab width_60">
+            <div class="bar_tab width_40">
               <div class="bar_up width_15"></div>
             </div>
           </div>
