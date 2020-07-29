@@ -37,6 +37,7 @@ list-style: none;
 .padding_20 {
   padding: 20px;
 }
+
 .txt_upper {
   text-transform: uppercase;
 }
@@ -163,16 +164,18 @@ aside {
   .profile {
     border: none;
   }
-  .install img {
-    width: 20%;
-  }
- .profile i {
+  .install img, .profile i {
     width: 100%;
+    text-align: left;
   }
+
   .menu_bottom {
     position: absolute;
     bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
+
 }
 /* /menu_bottom*/
 /* /aside*/
@@ -271,9 +274,6 @@ aside {
 .image:hover .overlay{
   display: block;
 }
-@media screen and (max-width:552px) {
-
-}
 @media screen and (min-width:640px) and (max-width:878px) {
   .picture {
     width: calc((100% - 70px) / 4);
@@ -284,10 +284,15 @@ aside {
     width: calc(100% - 50px);
   }
   .upgrade {
-  width: calc(100% - 50px);
+  width: calc(100% - 168px);
   }
   .picture {
   width: calc((100% - 70px) / 2);
+  }
+}
+@media screen and (max-width:552px) {
+  .upgrade {
+  width: calc(100% - 50px);
   }
 }
 /* /playlist*/
