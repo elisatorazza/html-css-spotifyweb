@@ -16,8 +16,8 @@
   <body>
     <div class="wrapper">
       <!-- lateral header -->
-      <main>
-        <aside>
+      <main class="flex">
+        <aside class="flex">
             <div class="logos ">
               <img class="logo m_top_20 m_bottom_20" src="img/Spotify_Logo_RGB_White.png" alt="Logo Spotify">
               <img class="icon m_top_20 m_bottom_20" src="img/Spotify_Icon_CMYK_White.png" alt="Icona Spotify">
@@ -68,7 +68,7 @@
             <a class="btn_upgrade white" href="#">Effettua l'upgrade</a>
           </div>
           <div class="menu_playlist">
-            <ul class="menu_style list-none">
+            <ul class="menu_style flex list-none">
               <li><a class="txt_upper" href="#">in evidenza</a></li>
               <li><a class="txt_upper" href="#">podcast</a></li>
               <li><a class="txt_upper" href="#">classifiche</a></li>
@@ -77,7 +77,7 @@
               <li><a class="txt_upper" href="#">scopri</a></li>
             </ul>
           </div>
-          <div class="small_wrapper padding_20 white">
+          <div class="small_wrapper flex padding_20 white">
             <!-- Recently played -->
             <div class="container-fluid">
               <h2 class="font_700">Recently played</h2>
@@ -156,7 +156,7 @@
       </main>
       <footer>
         <div class="small_wrapper">
-          <div class="artist">
+          <div class="artist flex">
             <img class="img-fluid" src="img/immagini_box/sinister.jpeg" alt="Immagine Sinister">
             <div class="title">
               <h4 class="white font_700">Sinister</h4>
@@ -169,25 +169,32 @@
             </div>
           </div>
           <div class="player">
-            <div class="play white">
+            <div class="play footer_box white">
               <i class="fas fa-random font_25"><a href="#"></a></i>
               <i class="fas fa-step-backward font_25"><a href="#"></a></i>
               <i class="far fa-play-circle font_25"><a href="#"></a></i>
               <i class="fas fa-step-forward font_25"><a href="#"></a></i>
               <i class="fas fa-redo font_25"><a href="#"></a></i>
             </div>
-            <div class="bar">
+            <div class="bar footer_box">
               <div class="time total">
                 <p>0:25</p>
               </div>
-              <div class="bar_tab"></div>
+              <div class="bar_tab width_80">
+                <div class="bar_up width_25"></div>
+              </div>
               <div class="time left">
                 <p>4:35</p>
               </div>
             </div>
           </div>
-          <div class="settings">
-
+          <div class="settings footer_box white">
+            <i class="fas fa-tasks"></i>
+            <i class="fas fa-desktop"></i>
+            <i class="fas fa-volume-up"></i>
+            <div class="bar_tab width_60">
+              <div class="bar_up width_15"></div>
+            </div>
           </div>
         </div>
       </footer>

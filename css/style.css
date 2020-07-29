@@ -48,6 +48,18 @@ list-style: none;
 .lg_grey {
   color: #D2D2D2;
 }
+.width_60 {
+  width:60%;
+}
+.width_80 {
+  width:80%;
+}
+.width_25 {
+  width:25%;
+}
+.width_15 {
+  width:15%;
+}
 /* /MIX*/
 
 /*MAIN*/
@@ -272,17 +284,22 @@ footer .small_wrapper {
 }
 .settings {
   width: 25%;
-  background-color:red;
-  height: 80px;
+  display:flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 .bar_tab {
-  width: 80%;
   height:4px;
   background-color: #6F6F6F;
   border-radius: 5px;
 }
-@media screen and (max-width:768px) {
-
+.bar_up {
+  height:4px;
+  background-color: #D2D2D2;
+  border-radius: 5px;
+}
+.settings > * {
+  margin: 0 8px;
 }
 /* /footer*/
 
