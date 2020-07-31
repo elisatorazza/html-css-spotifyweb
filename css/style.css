@@ -81,6 +81,9 @@ main {
   height: calc(100% - 80px);
 }
 /* aside*/
+main a {
+  transition: color 0.5s;
+}
 main a:hover {
   color:#fff;
   text-decoration: none;
@@ -94,6 +97,7 @@ aside {
   position: relative;
   padding: 0 30px;
   line-height: 35px;
+  overflow: hidden;
 }
 .logo {
   width: 100px;
@@ -102,6 +106,13 @@ aside {
 .icon {
   width: 30px;
   display: none;
+}
+.icons li {
+  padding-left: 28px;
+  border-left: 2px solid transparent;
+}
+.icons li:first-child {
+  border-left: 2px solid #ADFF2F;
 }
 .playlist_list{
   height: 100%;
